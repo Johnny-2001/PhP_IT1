@@ -5,13 +5,13 @@
     <input type="submit" name="form2" value="Submit"> 
     </form>
     <?php 
-    $rows = 12;
+    $rows = 2;
 
     if(isset($_GET["form2"])&& !(empty($_GET["rows"]))){
         $rows = $_GET["rows"];
     }
     echo "<table>";
-   for($x=0; $x<=$rows; $x++){
+   for($x=1; $x<=$rows; $x++){
         echo "
             <tr>
                 <td>$x</td>
