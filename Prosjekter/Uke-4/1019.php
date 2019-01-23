@@ -5,7 +5,7 @@
     <input type="submit" name="form2" value="Submit"> 
     </form>
     <?php 
-    $rows = 16;
+    $rows = 12;
 
     if(isset($_GET["form2"])&& !(empty($_GET["rows"]))){
         $rows = $_GET["rows"];
