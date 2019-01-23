@@ -1,7 +1,5 @@
 <h1>Oppgave 10.12:</h1>
-
     <p>Skriv inn en dato:</p>
-
     <form method="get" id="form">
     <p>Dato:</p><input type="text" name="day"> <br> 
     <p>Måned:</p><input type="text" name="month"> <br>
