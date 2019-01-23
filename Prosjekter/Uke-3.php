@@ -10,7 +10,7 @@
   <h1>Mitt første PHP skript: Yazty - Johnny</h1>
     <?php
 function getImage($num){
-  $image = "/Bilder/$num.png";
+  $image = "./Bilder/$num.png";
   return $image;
 }
 function isYatzy(){

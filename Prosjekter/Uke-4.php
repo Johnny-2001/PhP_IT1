@@ -13,9 +13,25 @@
     <div class="innpakning">
     <div class="row1">
     <h1>Oppgave 10.12:</h1>
+
+    <p>Skriv inn en dato:</p>
+    <form method="post" id="form">
+    <p>Dato:</p><input type="text" name="day"> <br> 
+    <p>Måned:</p><input type="text" name="month"> <br>
+    <p>År:</p><input type="text" name="year"> <br>
+    <input type="submit" name="submit" value="Submit"> 
+    </form>
+
     <?php
         $current_date = date_create();
         $born_date = date_create("2001-07-16");
+        if($_SERVER["REQUEST_METHOD"] == "POST" && !((empty($_POST["year"])) && (empty($_POST["month"])) && (empty($_POST["day"])))){
+            $year = $_POST["year"];
+            $month = $_POST["month"];
+            $day = $_POST["day"];
+
+            $born_date = date_create("$year-$month-$day");
+        }
 
         echo "<p>Fødselsdato: " . date_format($born_date, "d/m/Y") . "</p>";
 
@@ -50,10 +66,19 @@
     </div>
     <div class="row1">
     <h1>Oppgave 10.19:</h1>
-    
+
+    <form method="post" id="form">
+    <p>Antall rader:</p><input type="text" name="rows"> <br> 
+    <input type="submit" name="submit" value="Submit"> 
+    </form>
     <?php 
+    $rows = 16;
+
+    if($_SERVER["REQUEST_METHOD"] == "POST" && !(empty($_POST["rows"]))){
+        $rows = $_POST["rows"];
+    }
     echo "<table>";
-   for($x=0; $x<=25; $x++){
+   for($x=0; $x<=$rows; $x++){
         echo "
             <tr>
                 <td>$x</td>
