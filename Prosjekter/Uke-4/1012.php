@@ -29,12 +29,19 @@
                 echo "<p>Fødselsdato: " . date_format($born_date, "d/m/Y") . "</p>";
                 
                 $diff = date_diff($born_date, $current_date)->format("%y");
+                $birthdaydiff = date_format($born_date, "m-d");
+                $currentdiff = date_format($current_date, "m-d");
+
                 echo "<p>";
                 if ($diff < 18){
                     echo "Du er ikke 18 år";
                 }
+                else if ($diff == 18 && $birthdaydiff == $currentdiff ){
+                    echo "Gratulerer med dagen!";
+                } 
                 else if ($diff == 18){
                     echo "Du er 18 år!";
+        
                 }
                 else {
                     echo "Du er over 18 år!";

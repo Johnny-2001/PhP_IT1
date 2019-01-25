@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Uke 4</title>
-    <link rel="stylesheet" href="Stilark/uke4.css">
+    <link rel="stylesheet" href="./Stilark/uke4.css">
 </head>
 <body>
     <header> 
