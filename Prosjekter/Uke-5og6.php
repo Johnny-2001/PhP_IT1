@@ -6,34 +6,21 @@
     <link rel="stylesheet" href="./Stilark/uke5-6.css">
 </head>
 <body>
-<form method="get" id="form">
-    <p>Antall rader:</p><input type="text" name="rows"> <br> 
-    <input type="submit" name="form" value="Submit"> 
-    </form>
+<div class="innpakning">
+<div class="header">
+    <h1>Oppgave Uke 5 og 6: PhP - Johnny</h1>
+</div>
+<div class="row">
+<div class="con1">
 <?php 
-    $rows = 9;
-    if(isset($_GET["form"])&& !(empty($_GET["rows"]))){
-        $rows = $_GET["rows"];
-    }
-    echo "<table>";
-    for($i=1; $i <= $rows; $i++){
-        if($i == 1){
-            for ($j = 0; $j <= $rows; $j++){
-                echo "<td class='rad'>$j</td>";
-            }
-        }
-        echo "<tr><td class='rad'>$i</td>";
-        for ($x=1; $x <= $rows; $x++){
-            $produkt = $i * $x;
-            echo   "<td>
-                    $produkt
-                    </td>
-                    ";
-        }
-        echo "</tr>";
-    }
-    echo "</table>"
+    include "./Uke-5/gangetabell.php";
 ?>
+</div>
+<div class="con2">
+    
+</div>
+</div>
+</div>
     
 </body>
 </html>
