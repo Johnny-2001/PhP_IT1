@@ -1,3 +1,5 @@
+<h1>Oppgave 3:</h1>
+
 <form method="get" id="form">
     <p>Størrelse på gangetabell:</p><input type="text" name="rows"> <br> 
     <input type="submit" name="form" value="Submit"> 

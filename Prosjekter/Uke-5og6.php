@@ -12,12 +12,19 @@
 </div>
 <div class="row">
 <div class="con1">
-<?php 
-    include "./Uke-5/gangetabell.php";
+<?php
+    include "./Uke-5/array.php";
 ?>
 </div>
 <div class="con2">
-    
+    <?php
+        include "./Uke-5/skjema.php";
+    ?>
+</div>
+<div class="con3">
+<?php 
+    include "./Uke-5/gangetabell.php";
+?>
 </div>
 </div>
 </div>

@@ -24,17 +24,34 @@
      margin: 20px 0;
      border-radius: 5px;
  }
- .con1 table{
+ .con3 table{
     margin: 0 auto;
     border-collapse: collapse;
-    flex-basis: 500px;
 }
-.con1{
-    flex-basis: 40%;
+.con3, .con2, .con1{
     background-color: rgba(0,0,0,0.1);
-    padding: 50px;
+    padding: 30px;
     border-radius: 3px;
     border: 2px solid black;
+    margin: 0 10px;
+}
+li{
+    font-family: Arial, sans-serif;
+    left: 35%; 
+    position: relative;
+}
+.con1{
+    flex: 1;
+}
+.con2{
+    flex-basis: 20%;
+}
+.con3{
+    flex-basis: 40%;
+}
+ol{
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
 }
  form{
     display:block;
