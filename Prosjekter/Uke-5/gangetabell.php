@@ -10,12 +10,13 @@
     if(isset($_GET["form"])&& !(empty($_GET["rows"]))){
         $rows = $_GET["rows"];
     }
-    echo "<table>";
+    echo "<table><tr>";
     for($i=1; $i <= $rows; $i++){
         if($i == 1){
             for ($j = 0; $j <= $rows; $j++){
                 echo "<td class='rad'>$j</td>";
             }
+            echo "</tr>";
         }
         echo "<tr><td class='rad'>$i</td>";
         for ($x=1; $x <= $rows; $x++){

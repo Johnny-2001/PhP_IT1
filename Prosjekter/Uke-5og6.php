@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
-    <title>PhP: Uke 5-6</title>
+    <title>PHP: Uke 5-6</title>
     <link rel="stylesheet" href="./Stilark/uke5-6.css">
 </head>
 <body>
 <div class="innpakning">
 <div class="header">
-    <h1>Oppgave Uke 5 og 6: PhP - Johnny</h1>
+    <h1>Oppgave Uke 5 og 6: PHP - Johnny</h1>
 </div>
 <div class="row">
 <div class="con1">

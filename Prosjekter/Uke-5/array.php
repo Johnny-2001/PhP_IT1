@@ -11,5 +11,4 @@
     foreach($antallElever as $skole => $elever){
         echo "<p>Det er $elever elever på $skole</p><br>";
     }
-    
 ?>
